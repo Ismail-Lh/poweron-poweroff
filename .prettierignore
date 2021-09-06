@@ -1,0 +1,14 @@
+.next
+next-env.d.ts
+node_modules
+yarn.lock
+package-lock.json
+package.json
+public
+.vscode
+.prettierrc
+next.confige.js
+.eslintrc.js
+.eslintrc.json
+.husky
+
