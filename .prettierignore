@@ -7,8 +7,9 @@ package.json
 public
 .vscode
 .prettierrc
-next.confige.js
+next.config.js
 .eslintrc.js
 .eslintrc.json
 .husky
+README.md
 

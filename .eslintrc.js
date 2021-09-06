@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'google', 'prettier'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'prettier',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -11,7 +15,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: [
+    'react',
+  ],
   rules: {
     'require-jsdoc': 0,
     // suppress errors for missing 'import React' in files
@@ -19,6 +25,7 @@ module.exports = {
     // allow jsx syntax in js files (for next.js project)
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prop-types': 'off',
+    "react/jsx-props-no-spreading": 'off'
   },
   settings: {
     react: {
