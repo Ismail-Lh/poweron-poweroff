@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["components/index.js"],
+      "@styles": ["styles/index.js"],
+      "@icons": ["icons/index.js"],
+      "@utils/*": ["utils/*"]
+    }
+  }
+}

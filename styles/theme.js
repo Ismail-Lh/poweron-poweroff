@@ -1,0 +1,25 @@
+const theme = {
+  black: '#000000',
+  white: '#ffffff',
+  grey: '#919191',
+  smokeyGrey: '#727272',
+  mediumGrey: '#7d7d7d',
+  gunsmoke: '#878787',
+  mountainMist: '#979797',
+  starDust: '#9d9d9d',
+  silverSand: '#c0c0c0',
+  grapefruit: '#d0331f',
+  iron: '#d8d8d8',
+  lavenderPinocchio: '#e1e1e1',
+  whiteLilac: '#f7f7fb',
+  radicalRed: '#fc345c',
+  darkJungleGreen: '#1d1d1d',
+  zeus: '#231f20',
+  balticSea: '#2a2b2f',
+  dune: '#333333',
+  blueberry: '#3c3ea9',
+  blackEel: '#434343',
+  stormDust: '#646464',
+};
+
+export default theme;
