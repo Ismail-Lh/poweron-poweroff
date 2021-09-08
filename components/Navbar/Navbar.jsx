@@ -1,30 +1,30 @@
 import { navBarLinks_1, navBarLinks_2 } from '@utils/constants';
 import { NavbarLinks, NavbarLogo } from '@components';
 
-import { Header } from './NavbarStyles';
+import { Header, NavbarContainer } from './NavbarStyles';
+import { useGlobalContext } from '@contexts/global_context';
 import { CartIcon, MenuIcon } from '@icons';
 
-const Navbar = () => (
-  <Header>
-    <div className='container'>
-      <nav className='navbar '>
-        <NavbarLinks links={navBarLinks_1} />
-        <div className='menu'>
-          <button className='navbar__btn'>
-            <MenuIcon />
-          </button>
-        </div>
-        <NavbarLogo />
-        <NavbarLinks links={navBarLinks_2} />
+const Navbar = () => {
+  const { openMenu } = useGlobalContext();
 
-        <div className='cart'>
-          <button className='navbar__btn '>
+  return (
+    <Header>
+      <div className='container'>
+        <NavbarContainer className='navbar '>
+          <NavbarLinks links={navBarLinks_1} menu={true} handleClick={openMenu}>
+            <MenuIcon />
+          </NavbarLinks>
+
+          <NavbarLogo />
+
+          <NavbarLinks links={navBarLinks_2} cart={true}>
             <CartIcon />
-          </button>
-        </div>
-      </nav>
-    </div>
-  </Header>
-);
+          </NavbarLinks>
+        </NavbarContainer>
+      </div>
+    </Header>
+  );
+};
 
 export default Navbar;

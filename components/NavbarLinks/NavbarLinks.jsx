@@ -1,18 +1,19 @@
-import Link from 'next/link';
+import { NextLink } from '@components';
 
-import { List } from './NavbarLinksStyles';
+import { LinksContainer, List, ListItem } from './NavbarLinksStyles';
 
-const NavbarLinks = ({ links }) => {
+const NavbarLinks = ({ links, children, cart, menu, handleClick }) => {
   return (
-    <List>
-      {links?.map(({ id, link, route }) => (
-        <li key={id} className='list__items'>
-          <Link href={route}>
-            <a>{link}</a>
-          </Link>
-        </li>
-      ))}
-    </List>
+    <LinksContainer cart={cart} menu={menu}>
+      <List>
+        {links?.map(({ id, link, route }) => (
+          <ListItem key={id}>
+            <NextLink route={route} link={link} />
+          </ListItem>
+        ))}
+      </List>
+      <button onClick={handleClick}>{children}</button>
+    </LinksContainer>
   );
 };
 

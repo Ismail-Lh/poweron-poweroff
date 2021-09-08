@@ -1,31 +1,37 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { useGlobalContext } from '@contexts/global_context';
 import Head from 'next/head';
-import { Navbar } from '..';
+import { MobileMenu, Navbar } from '..';
 
-const Layout = ({ title, children, description }) => (
-  <div>
-    <Head>
-      <title>{title}</title>
-      <meta name='description' content={description} />
+const Layout = ({ title, children, description }) => {
+  const { isMenuOpen } = useGlobalContext();
 
-      <link rel='icon' href='/favicon.ico' />
-      <link rel='preconnect' href='https://fonts.googleapis.com' />
-      <link
-        rel='preconnect'
-        href='https://fonts.gstatic.com'
-        crossOrigin='true'
-      />
-      <link
-        href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'
-        rel='stylesheet'
-      />
-    </Head>
-    <main>
-      <Navbar />
-      {children}
-    </main>
-  </div>
-);
+  return (
+    <div>
+      <Head>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+
+        <link rel='icon' href='/favicon.ico' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
+      <main>
+        <Navbar />
+        {isMenuOpen && <MobileMenu />}
+        {children}
+      </main>
+    </div>
+  );
+};
 
 Layout.defaultProps = {
   title: 'PowerOn | PowerOff',
