@@ -21,6 +21,15 @@ export const LinksContainer = styled.div`
     svg {
       path {
         fill: ${({ theme }) => theme.mountainMist};
+        transition: all 0.2s ease-in;
+
+        @media (max-width: 1024px) {
+          fill: ${({ theme }) => theme.stormDust};
+        }
+
+        &:hover {
+          fill: ${({ theme }) => theme.stormDust};
+        }
       }
     }
 

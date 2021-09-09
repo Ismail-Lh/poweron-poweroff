@@ -1,10 +1,11 @@
 import { useContext, createContext, useReducer } from 'react';
 
 import { GlobalReducer } from '@reducers';
-import { OPEN_MENU, CLOSE_MENU } from '@utils/actions';
+import { OPEN_MENU, CLOSE_MENU, OPEN_CART, CLOSE_CART } from '@utils/actions';
 
 const initialState = {
   isMenuOpen: false,
+  isCartOpen: false,
 };
 
 const GlobalContext = createContext();
@@ -20,12 +21,22 @@ export const GlobalProvider = ({ children }) => {
     dispatch({ type: CLOSE_MENU });
   };
 
+  const openCart = () => {
+    dispatch({ type: OPEN_CART });
+  };
+
+  const closeCart = () => {
+    dispatch({ type: CLOSE_CART });
+  };
+
   return (
     <GlobalContext.Provider
       value={{
         ...state,
         openMenu,
         closeMenu,
+        openCart,
+        closeCart,
       }}>
       {children}
     </GlobalContext.Provider>

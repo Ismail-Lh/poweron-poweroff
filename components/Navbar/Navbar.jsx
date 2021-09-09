@@ -6,7 +6,7 @@ import { useGlobalContext } from '@contexts/global_context';
 import { CartIcon, MenuIcon } from '@icons';
 
 const Navbar = () => {
-  const { openMenu } = useGlobalContext();
+  const { openMenu, openCart } = useGlobalContext();
 
   return (
     <Header>
@@ -18,7 +18,7 @@ const Navbar = () => {
 
           <NavbarLogo />
 
-          <NavbarLinks links={navBarLinks_2} cart={true}>
+          <NavbarLinks links={navBarLinks_2} cart={true} handleClick={openCart}>
             <CartIcon />
           </NavbarLinks>
         </NavbarContainer>

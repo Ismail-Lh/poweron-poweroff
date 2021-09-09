@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
 export const SidebarContainer = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
   width: 35%;
   background-color: ${({ theme }) => theme.darkJungleGreen};
   z-index: 1000;
   padding: 2rem 0;
+  color: ${({ theme }) => theme.white};
 
   @media (max-width: 768px) {
     width: 50%;
@@ -29,9 +29,24 @@ export const SidebarContainer = styled.div`
     width: 100%;
   }
 
+  button {
+    width: 2rem;
+    height: 2rem;
+
+    svg path {
+      fill: ${({ theme }) => theme.white};
+    }
+  }
+
   ${({ cart }) =>
     cart &&
     css`
       right: 0;
+    `};
+
+  ${({ menu }) =>
+    menu &&
+    css`
+      left: 0;
     `};
 `;

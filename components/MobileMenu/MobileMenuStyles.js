@@ -1,19 +1,7 @@
 import styled, { css } from 'styled-components';
 
-export const MenuContainer = styled.div`
-  color: #fff;
-
-  .close__btn {
-    padding: 1.5rem 3rem;
-    button {
-      width: 2rem;
-      height: 2rem;
-
-      svg path {
-        fill: #fff;
-      }
-    }
-  }
+export const MenuHeader = styled.div`
+  padding: 1.5rem 3rem;
 `;
 
 export const MenuList = styled.ul`

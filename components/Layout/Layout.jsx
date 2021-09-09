@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { useGlobalContext } from '@contexts/global_context';
 import Head from 'next/head';
-import { MobileMenu, Navbar } from '..';
+import { Cart, MobileMenu, Navbar } from '..';
 
 const Layout = ({ title, children, description }) => {
-  const { isMenuOpen } = useGlobalContext();
+  const { isMenuOpen, isCartOpen } = useGlobalContext();
 
   return (
     <div>
@@ -27,6 +27,7 @@ const Layout = ({ title, children, description }) => {
       <main>
         <Navbar />
         {isMenuOpen && <MobileMenu />}
+        {isCartOpen && <Cart />}
         {children}
       </main>
     </div>
