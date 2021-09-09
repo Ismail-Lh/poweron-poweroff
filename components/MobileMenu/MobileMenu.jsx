@@ -1,6 +1,7 @@
 import { NextLink, Sidebar } from '@components';
 import { useGlobalContext } from '@contexts/global_context';
 import { CloseIcon } from '@icons';
+import { menuVariants } from '@utils/animations';
 import { mobileMenuLinks_1, mobileMenuLinks_2 } from '@utils/constants';
 import { MenuHeader, MenuList, MenuListItem } from './MobileMenuStyles';
 
@@ -8,7 +9,7 @@ const MobileMenu = () => {
   const { closeMenu } = useGlobalContext();
 
   return (
-    <Sidebar handleClick={closeMenu} menu={true}>
+    <Sidebar handleClick={closeMenu} menu={true} variants={menuVariants}>
       <MenuHeader>
         <button onClick={closeMenu}>
           <CloseIcon />

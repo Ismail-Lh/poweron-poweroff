@@ -1,13 +1,14 @@
+import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
 `;
 
-export const SidebarContainer = styled.div`
+export const SidebarContainer = styled(motion.div)`
   position: absolute;
   top: 0;
   height: 100%;

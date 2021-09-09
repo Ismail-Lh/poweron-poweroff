@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { useGlobalContext } from '@contexts/global_context';
+import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import { Cart, MobileMenu, Navbar } from '..';
 
@@ -26,8 +27,10 @@ const Layout = ({ title, children, description }) => {
       </Head>
       <main>
         <Navbar />
-        {isMenuOpen && <MobileMenu />}
-        {isCartOpen && <Cart />}
+        <AnimatePresence initial={false}>
+          {isMenuOpen && <MobileMenu />}
+          {isCartOpen && <Cart />}
+        </AnimatePresence>
         {children}
       </main>
     </div>
