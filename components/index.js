@@ -12,3 +12,6 @@ export { default as MobileMenu } from './MobileMenu/MobileMenu';
 
 // Cart components
 export { default as Cart } from './Cart/Cart';
+
+// Hero components
+export { default as HeroContent } from './HeroContent/HeroContent';

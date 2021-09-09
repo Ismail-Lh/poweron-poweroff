@@ -1,9 +1,10 @@
 import { Layout } from '@components';
+import { HeroSection } from '@sections';
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <HeroSection />
     </Layout>
   );
 };
