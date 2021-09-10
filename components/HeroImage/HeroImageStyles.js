@@ -9,5 +9,6 @@ export const Wrapper = styled.div`
   img {
     max-width: 30rem;
     z-index: 100;
+    transition: all 0.2s ease-in;
   }
 `;

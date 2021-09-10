@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from '@components';
+import { leftToRight, rightToLeft, stagger, fadeIn } from '@utils/animations';
 import {
   Wrapper,
   ImageContainer,
@@ -15,17 +16,26 @@ const HeroSliderContent = ({
   imgAlt,
   powerOn,
   powerOff,
+  children,
 }) => {
+  const animation = powerOn ? leftToRight : rightToLeft;
+
   return (
-    <Wrapper powerOn={powerOn}>
-      <ImageContainer className='img__container'>
+    <Wrapper
+      powerOn={powerOn}
+      variants={stagger}
+      initial='initial'
+      animate='animate'
+      exit='initial'>
+      {/* <ImageContainer className='img__container' variants={animation}>
         <img src={imgSrc} alt={imgAlt} />
       </ImageContainer>
-      <ContentContainer powerOn={powerOn} powerOff={powerOff}>
+      <ContentContainer powerOn={powerOn} powerOff={powerOff} variants={fadeIn}>
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
         <Button route='/' link='learn more' powerOn={powerOn} />
-      </ContentContainer>
+      </ContentContainer> */}
+      {children}
     </Wrapper>
   );
 };

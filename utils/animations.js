@@ -21,12 +21,12 @@ export const fadeIn = {
 export const stagger = {
   animate: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.15,
     },
   },
 };
 
-export const cartVariants = {
+export const rightToLeft = {
   initial: { opacity: 0, x: '100%', transition: transition },
   animate: {
     opacity: 1,
@@ -35,7 +35,7 @@ export const cartVariants = {
   },
 };
 
-export const menuVariants = {
+export const leftToRight = {
   initial: { opacity: 0, x: '-100%', transition: transition },
   animate: {
     opacity: 1,
@@ -44,7 +44,6 @@ export const menuVariants = {
   },
 };
 
-export const productModalVariants = {
-  initial: { opacity: 0, zIndex: '-100', transition: transition },
-  animate: { opacity: 1, zIndex: '100', x: 0, transition: transition },
+export const heroSliderVariants = {
+  initial: {},
 };

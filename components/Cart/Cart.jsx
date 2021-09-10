@@ -7,13 +7,13 @@ import {
   CartTitle,
   CartItemsContainer,
 } from './CartStyles';
-import { cartVariants } from '@utils/animations';
+import { rightToLeft } from '@utils/animations';
 
 const Cart = () => {
   const { closeCart } = useGlobalContext();
 
   return (
-    <Sidebar cart={true} handleClick={closeCart} variants={cartVariants}>
+    <Sidebar cart={true} handleClick={closeCart} variants={rightToLeft}>
       <CartContainer>
         <CartHeader>
           <CartTitle>cart</CartTitle>

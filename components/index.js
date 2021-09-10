@@ -17,3 +17,4 @@ export { default as Cart } from './Cart/Cart';
 // Hero components
 export { default as HeroImage } from './HeroImage/HeroImage';
 export { default as HeroSliderContent } from './HeroSliderContent/HeroSliderContent';
+export { default as HeroTextContent } from './HeroTextContent/HeroTextContent';
