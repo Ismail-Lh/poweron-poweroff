@@ -1,6 +1,6 @@
-import { HeroContent } from '@components';
 import { useState } from 'react';
-import { Wrapper } from './HeroSectionStyles';
+import { HeroImage, HeroSliderContent } from '@components';
+import { Wrapper, HeroContent } from './HeroSectionStyles';
 
 const HeroSection = () => {
   const [powerOn, setPowerOn] = useState(false);
@@ -9,21 +9,46 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <HeroContent
-        imgSrc='/assets/power-on-product.png'
-        imgAlt='power-on-product'
         bgColor='#f7f7fb'
         powerOn={powerOn}
-        handleMouseEnter={() => setPowerOn(true)}
-        handleMouseLeave={() => setPowerOn(false)}
-      />
+        onMouseEnter={() => setPowerOn(true)}
+        onMouseLeave={() => setPowerOn(false)}
+        className='left'>
+        <HeroImage
+          imgSrc='/assets/power-on-product.png'
+          imgAlt='power-on-product'
+        />
+        {powerOn && (
+          <HeroSliderContent
+            title='get focused, without the jitters'
+            subtitle='Enhance productivity without overstimulation'
+            imgSrc='/assets/power-on-bg.jpg'
+            imgAlt='power-on-bg'
+            powerOn={powerOn}
+          />
+        )}
+      </HeroContent>
+
       <HeroContent
-        imgSrc='/assets/power-off-product.png'
-        imgAlt='power-off-product'
         bgColor='#1d1d1d'
         powerOff={powerOff}
-        handleMouseEnter={() => setPowerOff(true)}
-        handleMouseLeave={() => setPowerOff(false)}
-      />
+        onMouseEnter={() => setPowerOff(true)}
+        onMouseLeave={() => setPowerOff(false)}
+        className='right'>
+        <HeroImage
+          imgSrc='/assets/power-off-product.png'
+          imgAlt='power-off-product'
+        />
+        {powerOff && (
+          <HeroSliderContent
+            title="get a better night's sleep"
+            subtitle='Sleep better, without risk of dependency'
+            imgSrc='/assets/power-off-bg.jpg'
+            imgAlt='power-off-bg'
+            powerOff={powerOff}
+          />
+        )}
+      </HeroContent>
     </Wrapper>
   );
 };

@@ -3,6 +3,7 @@ export { default as Layout } from './Layout/Layout';
 export { default as NextLink } from './NextLink/NextLink';
 export { default as Overlay } from './Overlay/Overlay';
 export { default as Sidebar } from './Sidebar/Sidebar';
+export { default as Button } from './Button/Button';
 
 // Navbar components
 export { default as Navbar } from './Navbar/Navbar';
@@ -14,4 +15,5 @@ export { default as MobileMenu } from './MobileMenu/MobileMenu';
 export { default as Cart } from './Cart/Cart';
 
 // Hero components
-export { default as HeroContent } from './HeroContent/HeroContent';
+export { default as HeroImage } from './HeroImage/HeroImage';
+export { default as HeroSliderContent } from './HeroSliderContent/HeroSliderContent';
