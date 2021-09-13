@@ -19,8 +19,8 @@ export const ButtonWrapper = styled.button`
     background-color: transparent;
   }
 
-  ${({ powerOn }) =>
-    powerOn &&
+  ${({ primary }) =>
+    primary &&
     css`
       background-color: ${({ theme }) => theme.radicalRed};
 
