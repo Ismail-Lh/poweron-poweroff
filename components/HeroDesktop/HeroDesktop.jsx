@@ -7,6 +7,7 @@ import { HeroImage, HeroSliderContent, HeroTextContent } from '@components';
 import { leftToRight, rightToLeft } from '@utils/animations';
 
 import { HeroContent, ImageContainer } from './HeroDesktopStyles';
+import { powerOffContent, powerOnContent } from '@utils/constants';
 
 const HeroDesktop = () => {
   const [powerOn, setPowerOn] = useState(false);
@@ -20,10 +21,7 @@ const HeroDesktop = () => {
         onMouseEnter={() => setPowerOn(true)}
         onMouseLeave={() => setPowerOn(false)}
         className='left'>
-        <HeroImage
-          imgSrc='/assets/power-on-product.png'
-          imgAlt='power-on-product'
-        />
+        <HeroImage {...powerOnContent} />
         <AnimatePresence initial={false}>
           {powerOn && (
             <HeroSliderContent powerOn={powerOn}>
@@ -33,9 +31,7 @@ const HeroDesktop = () => {
               <HeroTextContent
                 powerOn={powerOn}
                 powerOff={powerOff}
-                title='get focused, without the jitters'
-                subtitle='Enhance productivity without overstimulation'
-                primary={true}
+                {...powerOnContent}
               />
             </HeroSliderContent>
           )}
@@ -48,18 +44,14 @@ const HeroDesktop = () => {
         onMouseEnter={() => setPowerOff(true)}
         onMouseLeave={() => setPowerOff(false)}
         className='right'>
-        <HeroImage
-          imgSrc='/assets/power-off-product.png'
-          imgAlt='power-off-product'
-        />
+        <HeroImage {...powerOffContent} />
         <AnimatePresence initial={false}>
           {powerOff && (
             <HeroSliderContent powerOff={powerOff}>
               <HeroTextContent
                 powerOn={powerOn}
                 powerOff={powerOff}
-                title="get a better night's sleep"
-                subtitle='Sleep better, without risk of dependency'
+                {...powerOffContent}
               />
               <ImageContainer className='img__container' variants={rightToLeft}>
                 <img src='/assets/power-off-bg.jpg' alt='power-off-bg' />

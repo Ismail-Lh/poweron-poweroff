@@ -5,7 +5,11 @@ import { fadeIn } from '@utils/animations';
 
 const HeroTextContent = ({ title, subtitle, powerOn, powerOff, primary }) => {
   return (
-    <ContentContainer powerOn={powerOn} powerOff={powerOff} variants={fadeIn}>
+    <ContentContainer
+      className='product__feature-text'
+      powerOn={powerOn}
+      powerOff={powerOff}
+      variants={fadeIn}>
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
       <Button route='/' link='learn more' primary={primary} />

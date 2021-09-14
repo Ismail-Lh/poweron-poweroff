@@ -93,3 +93,22 @@ export const mobileMenuLinks_2 = [
     route: '/pages/terms',
   },
 ];
+
+export const powerOnContent = {
+  title: 'get focused, without the jitters',
+  subtitle: 'Enhance productivity without overstimulation',
+  route: '/',
+  imgSrc: '/assets/power-on-product.png',
+  imgAlt: 'power-on-product',
+  bgColor: '#f7f7fb',
+  primary: true,
+};
+
+export const powerOffContent = {
+  title: "get a better night's sleep",
+  subtitle: 'Sleep better, without risk of dependency',
+  route: '/',
+  imgSrc: '/assets/power-off-product.png',
+  imgAlt: 'power-off-product',
+  bgColor: '#1d1d1d',
+};

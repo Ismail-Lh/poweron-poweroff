@@ -4,7 +4,7 @@ import { Wrapper } from './HeroImageStyles';
 
 const HeroImage = ({ imgSrc, imgAlt }) => {
   return (
-    <Wrapper>
+    <Wrapper className='product__feature-img'>
       <img src={imgSrc} alt={imgAlt} className='product__img' />
     </Wrapper>
   );
