@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { HeroImage, HeroTextContent } from '@components';
+import {
+  HeroImage,
+  HeroTextContent,
+  ProductFeatureContainer,
+} from '@components';
 import { Wrapper, GridContainer } from './ProductFeatureSectionStyles';
 
 const ProductFeatureSection = ({
@@ -9,6 +13,7 @@ const ProductFeatureSection = ({
   imgSrc,
   imgAlt,
   primary,
+  productFeature,
 }) => {
   return (
     <Wrapper bgColor={bgColor}>
@@ -28,6 +33,10 @@ const ProductFeatureSection = ({
         </div>
 
         <HeroImage imgSrc={imgSrc} imgAlt={imgAlt} />
+        <ProductFeatureContainer
+          productFeature={productFeature}
+          primary={primary}
+        />
       </GridContainer>
     </Wrapper>
   );

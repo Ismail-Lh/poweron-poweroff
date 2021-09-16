@@ -21,3 +21,6 @@ export { default as HeroTextContent } from './HeroTextContent/HeroTextContent';
 export { default as HeroDesktop } from './HeroDesktop/HeroDesktop';
 export { default as HeroSmallScreen } from './HeroSmallScreen/HeroSmallScreen';
 export { default as HeroSmallScreenContent } from './HeroSmallScreenContent/HeroSmallScreenContent';
+
+// Product Feature Section
+export { default as ProductFeatureContainer } from './ProductFeatureContainer/ProductFeatureContainer';

@@ -1,4 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
+import { RiFocus2Line, RiMentalHealthLine } from 'react-icons/ri';
+import { MdMemory } from 'react-icons/md';
+import { GiEmbrassedEnergy, GiNightSleep } from 'react-icons/gi';
+import { BiBrain, BiPlus } from 'react-icons/bi';
+import { FaEquals } from 'react-icons/fa';
 
 export const navBarLinks_1 = [
   {
@@ -104,6 +109,39 @@ export const powerOnContent = {
   primary: true,
 };
 
+export const powerOnFeature = [
+  {
+    id: uuidv4(),
+    icon: <RiFocus2Line />,
+    title: 'focus',
+    text: 'Helps support the healthy production of dopamine, the key neurotransmitter for focus',
+  },
+  {
+    id: uuidv4(),
+    icon: <MdMemory />,
+    title: 'memory',
+    text: 'Contains ingredients clinically shown to support memory',
+  },
+  {
+    id: uuidv4(),
+    icon: <GiEmbrassedEnergy />,
+    title: 'energy',
+    text: 'Supports ATP, your brain’s energy currency',
+  },
+  {
+    id: uuidv4(),
+    icon: <RiMentalHealthLine />,
+    title: 'mental edge',
+    text: 'Supports blood flow to the brain',
+  },
+  {
+    id: uuidv4(),
+    icon: <BiBrain />,
+    title: 'brain health',
+    text: 'Provides nutrients to support healthy neurotransmitter production during the day',
+  },
+];
+
 export const powerOffContent = {
   title: "get a better night's sleep",
   subtitle: 'Sleep better, without risk of dependency',
@@ -112,3 +150,30 @@ export const powerOffContent = {
   imgAlt: 'power-off-product',
   bgColor: '#1d1d1d',
 };
+
+export const powerOffFeature = [
+  {
+    id: uuidv4(),
+    icon: <GiNightSleep />,
+    title: 'sleep support',
+    text: 'Helps your brain power down for sleep',
+  },
+  {
+    id: uuidv4(),
+    icon: <BiPlus />,
+    title: 'recovery',
+    text: 'Supports sleep quality so you wake up feeling rested',
+  },
+  {
+    id: uuidv4(),
+    icon: <FaEquals />,
+    title: 'relaxation',
+    text: 'Promotes calmness before and during sleep',
+  },
+  {
+    id: uuidv4(),
+    icon: <BiBrain />,
+    title: 'brain health',
+    text: 'Provides nutrients to support neurotransmitters during rest',
+  },
+];
