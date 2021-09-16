@@ -2,7 +2,7 @@
 import { useGlobalContext } from '@contexts/global_context';
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-import { Cart, MobileMenu, Navbar } from '..';
+import { Cart, Footer, MobileMenu, Navbar } from '..';
 
 const Layout = ({ title, children, description }) => {
   const { isMenuOpen, isCartOpen } = useGlobalContext();
@@ -32,6 +32,7 @@ const Layout = ({ title, children, description }) => {
           {isCartOpen && <Cart />}
         </AnimatePresence>
         {children}
+        <Footer />
       </main>
     </div>
   );

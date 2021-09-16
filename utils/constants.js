@@ -177,3 +177,34 @@ export const powerOffFeature = [
     text: 'Provides nutrients to support neurotransmitters during rest',
   },
 ];
+
+export const footerLinks = [
+  {
+    id: uuidv4(),
+    title: 'products',
+    links: [
+      { linkId: uuidv4(), link: 'power on', route: '/' },
+      { linkId: uuidv4(), link: 'power off', route: '/' },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: 'more info',
+    links: [
+      { linkId: uuidv4(), link: 'science', route: '/' },
+      { linkId: uuidv4(), link: 'faq', route: '/' },
+      { linkId: uuidv4(), link: 'about us', route: '/' },
+      { linkId: uuidv4(), link: 'privacy policy', route: '/' },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: 'help & support',
+    links: [
+      { linkId: uuidv4(), link: 'contact us', route: '/' },
+      { linkId: uuidv4(), link: 'returns & exchanges', route: '/' },
+      { linkId: uuidv4(), link: 'shipping policy', route: '/' },
+      { linkId: uuidv4(), link: 'terms of use', route: '/' },
+    ],
+  },
+];

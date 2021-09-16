@@ -32,6 +32,7 @@ input,
 textarea,
 svg {
   outline: none;
+  border: none;
 }
 
 a {

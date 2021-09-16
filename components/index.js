@@ -24,3 +24,8 @@ export { default as HeroSmallScreenContent } from './HeroSmallScreenContent/Hero
 
 // Product Feature Section
 export { default as ProductFeatureContainer } from './ProductFeatureContainer/ProductFeatureContainer';
+
+// Footer
+export { default as Footer } from './Footer/Footer';
+export { default as FooterLinks } from './FooterLinks/FooterLinks';
+export { default as FooterForm } from './FooterForm/FooterForm';

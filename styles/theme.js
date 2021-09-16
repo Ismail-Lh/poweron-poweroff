@@ -9,7 +9,7 @@ const theme = {
   starDust: '#9d9d9d',
   silverSand: '#c0c0c0',
   grapefruit: '#d0331f',
-  iron: '#d8d8d8',
+  iron: '#8d8d8d',
   lavenderPinocchio: '#e1e1e1',
   whiteLilac: '#f7f7fb',
   radicalRed: '#fc345c',
