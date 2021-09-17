@@ -6,7 +6,7 @@ export const Wrapper = styled(motion.div)`
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2000;
+  z-index: 9999;
 `;
 
 export const SidebarContainer = styled(motion.div)`

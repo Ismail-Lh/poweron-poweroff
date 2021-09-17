@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <Header>
       <div className='container'>
-        <NavbarContainer className='navbar '>
+        <NavbarContainer className='navbar'>
           <NavbarLinks links={navBarLinks_1} menu={true} handleClick={openMenu}>
             <MenuIcon />
           </NavbarLinks>

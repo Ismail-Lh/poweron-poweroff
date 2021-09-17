@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: ${({ theme }) => theme.whiteLilac};
+  z-index: 9000;
   padding: 4rem 0 3.6rem 0;
 
   @media (max-width: 1024px) {
