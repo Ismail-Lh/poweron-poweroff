@@ -1,4 +1,5 @@
-import { FaArrowRight } from 'react-icons/fa';
+import { NextLink } from '@components';
+import { FaArrowRight, FaTwitter, FaFacebookF } from 'react-icons/fa';
 import { Wrapper } from './FooterFormStyles';
 
 const FooterForm = () => {
@@ -17,6 +18,10 @@ const FooterForm = () => {
           <FaArrowRight />
         </button>
       </form>
+      <div className='icons'>
+        <NextLink route='/' link={<FaFacebookF />} />
+        <NextLink route='/' link={<FaTwitter />} />
+      </div>
     </Wrapper>
   );
 };
