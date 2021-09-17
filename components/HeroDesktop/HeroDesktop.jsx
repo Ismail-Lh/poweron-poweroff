@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 import { HeroImage, HeroSliderContent, HeroTextContent } from '@components';
 import { leftToRight, rightToLeft } from '@utils/animations';
@@ -36,6 +37,9 @@ const HeroDesktop = () => {
             </HeroSliderContent>
           )}
         </AnimatePresence>
+        <div className='arrow arrow__left'>
+          <BsArrowLeft />
+        </div>
       </HeroContent>
 
       <HeroContent
@@ -59,6 +63,9 @@ const HeroDesktop = () => {
             </HeroSliderContent>
           )}
         </AnimatePresence>
+        <div className='arrow arrow__right'>
+          <BsArrowRight />
+        </div>
       </HeroContent>
     </>
   );
