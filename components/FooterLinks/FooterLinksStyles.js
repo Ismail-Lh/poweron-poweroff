@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    text-align: center;
+  }
 `;
 
 export const List = styled.ul``;

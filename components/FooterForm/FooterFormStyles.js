@@ -11,6 +11,14 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
 
+    @media (max-width: 425px) {
+      width: 90%;
+    }
+
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+
     &__input {
       padding: 1rem 3rem;
       background-color: transparent;
