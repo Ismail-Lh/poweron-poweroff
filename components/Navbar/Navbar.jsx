@@ -10,19 +10,17 @@ const Navbar = () => {
 
   return (
     <Header>
-      <div className='container'>
-        <NavbarContainer className='navbar'>
-          <NavbarLinks links={navBarLinks_1} menu={true} handleClick={openMenu}>
-            <MenuIcon />
-          </NavbarLinks>
+      <NavbarContainer className='navbar'>
+        <NavbarLinks links={navBarLinks_1} left={true} handleClick={openMenu}>
+          <MenuIcon />
+        </NavbarLinks>
 
-          <NavbarLogo />
+        <NavbarLogo />
 
-          <NavbarLinks links={navBarLinks_2} cart={true} handleClick={openCart}>
-            <CartIcon />
-          </NavbarLinks>
-        </NavbarContainer>
-      </div>
+        <NavbarLinks links={navBarLinks_2} right={true} handleClick={openCart}>
+          <CartIcon />
+        </NavbarLinks>
+      </NavbarContainer>
     </Header>
   );
 };

@@ -2,21 +2,18 @@ import styled from 'styled-components';
 
 export const LinksContainer = styled.div`
   display: flex;
-  align-items: center;
-
-  @media (max-width: 1024px) {
-    justify-content: ${({ cart }) => cart && 'flex-end'};
-  }
+  align-items: flex-end;
+  justify-content: ${({ right }) => right && 'flex-end'};
 
   button {
-    display: ${({ menu }) => menu && 'none'};
+    display: ${({ left }) => left && 'none'};
 
     @media (max-width: 1024px) {
       display: block;
     }
 
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
 
     svg {
       path {
@@ -42,7 +39,6 @@ export const LinksContainer = styled.div`
 
 export const List = styled.ul`
   display: flex;
-  align-items: center;
 
   @media (max-width: 1024px) {
     display: none;
@@ -50,11 +46,10 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  padding: 1.5rem 2rem;
+  margin-right: 5rem;
   a {
     color: ${({ theme }) => theme.mountainMist};
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.6rem;
     letter-spacing: 1.24px;
     text-transform: uppercase;
     transition: all 0.2s ease-in;

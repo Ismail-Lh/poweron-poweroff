@@ -32,7 +32,7 @@ const Layout = ({ title, children, description }) => {
           {isCartOpen && <Cart />}
         </AnimatePresence>
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

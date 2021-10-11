@@ -2,9 +2,9 @@ import { NextLink } from '@components';
 
 import { LinksContainer, List, ListItem } from './NavbarLinksStyles';
 
-const NavbarLinks = ({ links, children, cart, menu, handleClick }) => {
+const NavbarLinks = ({ links, children, right, left, handleClick }) => {
   return (
-    <LinksContainer cart={cart} menu={menu}>
+    <LinksContainer right={right} left={left}>
       <List>
         {links?.map(({ id, link, route }) => (
           <ListItem key={id}>

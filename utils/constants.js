@@ -8,12 +8,12 @@ import { FaEquals } from 'react-icons/fa';
 export const navBarLinks_1 = [
   {
     id: uuidv4(),
-    link: 'power on',
+    link: 'poweron',
     route: '/products/power-on',
   },
   {
     id: uuidv4(),
-    link: 'power off',
+    link: 'poweroff',
     route: '/products/power-off',
   },
 ];

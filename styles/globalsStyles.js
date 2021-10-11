@@ -14,10 +14,9 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.whiteLilac};
   width: 100vw;
   height: 100vh;
-  line-height: 1.6;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -51,12 +50,11 @@ button {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 136.6rem;
   margin: 0 auto;
-  padding: 0 3rem;
-
-  @media (max-width: 550px){
-    padding: 0 2rem;
+  
+  @media (max-width: 1336px){
+    max-width: 120rem;
   }
 }
 `;

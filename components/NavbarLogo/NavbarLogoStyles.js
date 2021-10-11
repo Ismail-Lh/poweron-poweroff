@@ -5,6 +5,9 @@ export const Logo = styled.div`
   place-items: center;
 
   svg {
+    width: 29.6rem;
+    height: 3.5rem;
+
     @media (max-width: 1024px) {
       width: 25rem;
     }
