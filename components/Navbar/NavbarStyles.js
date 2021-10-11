@@ -7,8 +7,6 @@ export const Header = styled.header`
   background-color: ${({ theme }) => theme.white};
   z-index: 9000;
   padding: 3.5rem 5rem;
-  display: grid;
-  place-content: center;
 
   @media (max-width: 1366px) {
     padding: 3rem 5rem;

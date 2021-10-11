@@ -2,13 +2,18 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const HeroContent = styled.div`
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-color: ${({ bgColor }) => bgColor};
-  transition: all 0.3s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+  display: grid;
+  grid-template-columns: 41.291rem auto;
 
-  & .arrow {
+  @media (max-width: 1366px) {
+    grid-template-columns: 28.602rem auto;
+  }
+
+  @media (max-width: 1280px) {
+    grid-template-columns: 26.988rem auto;
+  }
+
+  /* & .arrow {
     position: absolute;
     top: 50%;
     right: 1.5rem;
@@ -72,12 +77,64 @@ export const HeroContent = styled.div`
           }
         }
       }
-    `}
+    `} */
 `;
 
 export const ImageContainer = styled(motion.div)`
+  &.product__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45rem;
+    height: 80rem;
+
+    @media (max-width: 1366px) {
+      width: 30.532rem;
+      height: 54.4rem;
+    }
+
+    @media (max-width: 1280px) {
+      width: 28.2rem;
+      height: 50.244rem;
+    }
+
+    &-on {
+      left: 18.8rem;
+
+      @media (max-width: 1366px) {
+        left: 13.12rem;
+      }
+
+      @media (max-width: 1280px) {
+        left: 12.89rem;
+      }
+    }
+  }
+
   img {
     width: 100%;
     height: 100%;
+  }
+`;
+
+export const BigTitle = styled.h1`
+  font-size: 16.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.mountainMist};
+  opacity: 8%;
+  position: absolute;
+  top: 50%;
+  right: -22rem;
+  transform: translateY(-50%) rotate(90deg);
+
+  @media (max-width: 1366px) {
+    font-size: 11.5rem;
+    right: -14rem;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 10rem;
+    right: -12rem;
   }
 `;

@@ -10,8 +10,8 @@ import {
 const HomePage = () => {
   return (
     <Layout>
-      {/* <HeroSection />
-      <ProductFeatureSection
+      <HeroSection />
+      {/* <ProductFeatureSection
         {...powerOnContent}
         productFeature={powerOnFeature}
       />
@@ -19,7 +19,6 @@ const HomePage = () => {
         {...powerOffContent}
         productFeature={powerOffFeature}
       /> */}
-      <h1>Hello World</h1>
     </Layout>
   );
 };

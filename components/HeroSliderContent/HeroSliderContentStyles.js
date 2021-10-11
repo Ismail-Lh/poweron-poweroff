@@ -2,21 +2,15 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Wrapper = styled(motion.div)`
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  position: absolute;
-  top: 0;
-  left: 0;
   color: ${({ theme }) => theme.balticSea};
+  position: relative;
 
-  ${({ powerOn }) =>
+  /* ${({ powerOn }) =>
     !powerOn &&
     css`
       grid-template-columns: 70% 30%;
       color: ${({ theme }) => theme.white};
-    `}
+    `} */
 `;
 
 // export const ImageContainer = styled(motion.div)`

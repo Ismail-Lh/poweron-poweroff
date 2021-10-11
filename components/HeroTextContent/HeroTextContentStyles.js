@@ -5,18 +5,11 @@ export const ContentContainer = styled(motion.div)`
   display: grid;
   place-content: center;
 
-  @media (max-width: 1024px) {
-    text-align: center;
-    place-items: center;
-
-    & .btn {
-      font-size: 1.2rem;
-      padding: 1.2rem 3rem 0.9rem 3rem;
-      width: auto;
-    }
+  & .content {
+    width: 52rem;
   }
 
-  ${({ powerOn }) =>
+  /* ${({ powerOn }) =>
     powerOn &&
     css`
       margin-left: 15rem;
@@ -26,18 +19,27 @@ export const ContentContainer = styled(motion.div)`
     powerOff &&
     css`
       margin-right: 15rem;
-    `}
+    `} */
 `;
 
-export const Title = styled.h3`
-  font-size: 6.4rem;
-  line-height: 6.4rem;
-  letter-spacing: -2px;
-  font-weight: 400;
+export const Title = styled.h1`
+  font-size: 7.4rem;
+  line-height: 8rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
   text-transform: uppercase;
-  width: 12ch;
+  margin-bottom: 1rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
+    font-size: 7rem;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  /* @media (max-width: 1024px) {
     font-size: 3rem;
     line-height: 3rem;
     width: auto;
@@ -48,19 +50,24 @@ export const Title = styled.h3`
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: 0;
-  }
+  } */
 `;
 
 export const SubTitle = styled.p`
-  margin: 2rem 0;
+  margin-bottom: 3rem;
   text-transform: capitalize;
-  font-size: 2.4rem;
-  line-height: 3rem;
-  width: 20ch;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 1.5px;
+  width: 38.2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1280) {
+    margin-bottom: 2rem;
+  }
+
+  /* @media (max-width: 1024px) {
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin: 0 0 1rem 0;
-  }
+  } */
 `;

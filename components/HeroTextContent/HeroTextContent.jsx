@@ -10,9 +10,11 @@ const HeroTextContent = ({ title, subtitle, powerOn, powerOff, primary }) => {
       powerOn={powerOn}
       powerOff={powerOff}
       variants={fadeIn}>
-      <Title>{title}</Title>
-      <SubTitle>{subtitle}</SubTitle>
-      <Button route='/' link='learn more' primary={primary} />
+      <div className='content'>
+        <Title>{title}</Title>
+        <SubTitle>{subtitle}</SubTitle>
+        <Button route='/' link='learn more' primary={primary} />
+      </div>
     </ContentContainer>
   );
 };
