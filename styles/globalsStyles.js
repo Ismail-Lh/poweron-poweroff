@@ -56,6 +56,22 @@ button {
   @media (max-width: 1336px){
     max-width: 120rem;
   }
+
+  @media (max-width: 1280px){
+    max-width: 102.4rem;
+  }
+
+  @media (max-width: 1024px){
+    max-width: 76.8rem;
+  }
+
+  @media (max-width: 768px){
+    max-width: 60.8rem;
+  }
+
+  @media (max-width: 428px){
+    max-width: 30.5rem;
+  }
 }
 `;
 

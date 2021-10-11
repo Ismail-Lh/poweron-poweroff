@@ -15,6 +15,11 @@ export const LinksContainer = styled.div`
     height: 3rem;
     width: 3rem;
 
+    @media (max-width: 428px) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
     svg {
       path {
         fill: ${({ theme }) => theme.mountainMist};
@@ -47,6 +52,11 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin-right: 5rem;
+
+  @media (max-width: 1366px) {
+    margin-right: 2.5rem;
+  }
+
   a {
     color: ${({ theme }) => theme.mountainMist};
     font-size: 1.6rem;
