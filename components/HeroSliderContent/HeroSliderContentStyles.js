@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 export const Wrapper = styled(motion.div)`
   color: ${({ theme }) => theme.balticSea};
   position: relative;
+  height: 100%;
 
   /* ${({ powerOn }) =>
     !powerOn &&

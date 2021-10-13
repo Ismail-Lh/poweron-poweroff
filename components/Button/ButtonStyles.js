@@ -14,6 +14,10 @@ export const ButtonWrapper = styled.button`
   border-radius: 100px;
   transition: all 0.3s ease-in;
 
+  @media (max-width: 1024px) {
+    padding: 2.25rem 3.1rem;
+  }
+
   &:hover {
     border: 3px solid ${({ theme }) => theme.blueberry};
     background-color: transparent;

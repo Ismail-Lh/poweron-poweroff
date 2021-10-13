@@ -13,6 +13,15 @@ export const HeroContent = styled.div`
     grid-template-columns: 26.988rem auto;
   }
 
+  @media (max-width: 1024px) {
+    grid-template-columns: 29.452rem auto;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
   /* & .arrow {
     position: absolute;
     top: 50%;
@@ -81,6 +90,12 @@ export const HeroContent = styled.div`
 `;
 
 export const ImageContainer = styled(motion.div)`
+  &.img__container {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &.product__img {
     position: absolute;
     top: 50%;
@@ -98,6 +113,16 @@ export const ImageContainer = styled(motion.div)`
       height: 50.244rem;
     }
 
+    @media (max-width: 1024px) {
+      width: 25.8rem;
+      height: 46.044rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 46.8rem;
+      height: 83.444rem;
+    }
+
     &-on {
       left: 18.8rem;
 
@@ -107,6 +132,14 @@ export const ImageContainer = styled(motion.div)`
 
       @media (max-width: 1280px) {
         left: 12.89rem;
+      }
+
+      @media (max-width: 1024px) {
+        left: 16.53rem;
+      }
+
+      @media (max-width: 768px) {
+        left: -23.33rem;
       }
     }
   }
@@ -136,5 +169,34 @@ export const BigTitle = styled.h1`
   @media (max-width: 1280px) {
     font-size: 10rem;
     right: -12rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 8rem;
+    right: -10rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const SvgContainer = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 38.152rem;
+    height: 41.016rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(19rem);
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: ${({ theme }) => theme.radicalRed};
   }
 `;

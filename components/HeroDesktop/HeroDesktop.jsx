@@ -7,8 +7,14 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { HeroImage, HeroSliderContent, HeroTextContent } from '@components';
 import { leftToRight, rightToLeft } from '@utils/animations';
 
-import { HeroContent, ImageContainer, BigTitle } from './HeroDesktopStyles';
+import {
+  HeroContent,
+  ImageContainer,
+  BigTitle,
+  SvgContainer,
+} from './HeroDesktopStyles';
 import { powerOffContent, powerOnContent } from '@utils/constants';
+import Blob from '../../svg/Blob';
 
 const HeroDesktop = () => {
   const [powerOn, setPowerOn] = useState(false);
@@ -28,10 +34,16 @@ const HeroDesktop = () => {
             {...powerOnContent}
           />
         </HeroContent>
+
         <ImageContainer className='product__img product__img-on'>
           <img src='/assets/power-on-product.png' alt='power-on-product' />
         </ImageContainer>
+
         <BigTitle>poweron</BigTitle>
+
+        <SvgContainer>
+          <Blob />
+        </SvgContainer>
       </HeroSliderContent>
 
       {/* <HeroSliderContent powerOff={powerOff}>

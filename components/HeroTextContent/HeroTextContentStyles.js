@@ -7,6 +7,14 @@ export const ContentContainer = styled(motion.div)`
 
   & .content {
     width: 52rem;
+
+    @media (max-width: 1024px) {
+      width: 42.1rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 13rem;
+    }
   }
 
   /* ${({ powerOn }) =>
@@ -39,6 +47,11 @@ export const Title = styled.h1`
     line-height: 7rem;
   }
 
+  @media (max-width: 1024px) {
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
+
   /* @media (max-width: 1024px) {
     font-size: 3rem;
     line-height: 3rem;
@@ -59,6 +72,7 @@ export const SubTitle = styled.p`
   font-size: 3rem;
   line-height: 3.5rem;
   letter-spacing: 1.5px;
+  color: ${({ theme }) => theme.mountainMist};
   width: 38.2rem;
 
   @media (max-width: 1280) {
