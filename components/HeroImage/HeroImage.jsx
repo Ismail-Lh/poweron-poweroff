@@ -2,10 +2,10 @@
 
 import { Wrapper } from './HeroImageStyles';
 
-const HeroImage = ({ imgSrc, imgAlt }) => {
+const HeroImage = ({ productImgSrc, productImgAlt }) => {
   return (
-    <Wrapper className='product__feature-img'>
-      <img src={imgSrc} alt={imgAlt} className='product__img' />
+    <Wrapper>
+      <img src={productImgSrc} alt={productImgAlt} />
     </Wrapper>
   );
 };

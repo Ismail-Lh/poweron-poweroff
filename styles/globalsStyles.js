@@ -70,7 +70,11 @@ button {
   }
 
   @media (max-width: 428px){
-    max-width: 30.5rem;
+    max-width: 35rem;
+  }
+
+  @media (max-width: 390px){
+    max-width: 31.8rem;
   }
 }
 `;

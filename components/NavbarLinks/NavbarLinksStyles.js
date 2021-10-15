@@ -15,7 +15,7 @@ export const LinksContainer = styled.div`
     height: 3rem;
     width: 3rem;
 
-    @media (max-width: 428px) {
+    @media (max-width: 1366px) {
       width: 2.5rem;
       height: 2.5rem;
     }
@@ -51,10 +51,10 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  margin-right: 5rem;
+  margin-right: 3rem;
 
   @media (max-width: 1366px) {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
 
   a {
@@ -66,6 +66,10 @@ export const ListItem = styled.li`
 
     &:hover {
       color: ${({ theme }) => theme.stormDust};
+    }
+
+    @media (max-width: 1366px) {
+      font-size: 1.4rem;
     }
   }
 `;

@@ -15,10 +15,9 @@ export { default as MobileMenu } from './MobileMenu/MobileMenu';
 export { default as Cart } from './Cart/Cart';
 
 // Hero components
+export { default as HeroContainer } from './HeroContainer/HeroContainer';
 export { default as HeroImage } from './HeroImage/HeroImage';
-export { default as HeroSliderContent } from './HeroSliderContent/HeroSliderContent';
-export { default as HeroTextContent } from './HeroTextContent/HeroTextContent';
-export { default as HeroDesktop } from './HeroDesktop/HeroDesktop';
+export { default as HeroText } from './HeroText/HeroText';
 
 // Product Feature Section
 export { default as ProductFeatureContainer } from './ProductFeatureContainer/ProductFeatureContainer';

@@ -1,14 +1,11 @@
-import { useMediaQuery } from '@react-hook/media-query';
-
 import { Wrapper } from './HeroSectionStyles';
-import { HeroDesktop } from '@components';
+import { HeroContainer } from '@components';
+import { powerOnContent } from '@utils/constants';
 
 const HeroSection = () => {
-  const matchesMedia = useMediaQuery('only screen and (max-width: 1024px)');
-
   return (
     <Wrapper>
-      <HeroDesktop />
+      <HeroContainer {...powerOnContent} />
     </Wrapper>
   );
 };

@@ -1,9 +1,16 @@
 import { Button } from '@components';
-import { ContentContainer, Title, SubTitle } from './HeroTextContentStyles';
+import { ContentContainer, Title, SubTitle, BigTitle } from './HeroTextStyles';
 
 import { fadeIn } from '@utils/animations';
 
-const HeroTextContent = ({ title, subtitle, powerOn, powerOff, primary }) => {
+const HeroText = ({
+  title,
+  subtitle,
+  powerOn,
+  powerOff,
+  primary,
+  bigTitle,
+}) => {
   return (
     <ContentContainer
       className='product__feature-text'
@@ -15,8 +22,10 @@ const HeroTextContent = ({ title, subtitle, powerOn, powerOff, primary }) => {
         <SubTitle>{subtitle}</SubTitle>
         <Button route='/' link='learn more' primary={primary} />
       </div>
+
+      <BigTitle>poweron</BigTitle>
     </ContentContainer>
   );
 };
 
-export default HeroTextContent;
+export default HeroText;

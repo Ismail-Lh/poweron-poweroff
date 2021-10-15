@@ -102,9 +102,12 @@ export const mobileMenuLinks_2 = [
 export const powerOnContent = {
   title: 'get focused, without the jitters',
   subtitle: 'Enhance productivity without overstimulation',
+  bigTitle: 'poweron',
   route: '/',
-  imgSrc: '/assets/power-on-product.png',
-  imgAlt: 'power-on-product',
+  productImgSrc: '/assets/power-on-product.png',
+  productImgAlt: 'power-on-product',
+  bgImgSrc: '/assets/power-on-bg.jpg',
+  bgImgAlt: 'power-on-bg',
   bgColor: '#f7f7fb',
   primary: true,
 };
@@ -145,9 +148,12 @@ export const powerOnFeature = [
 export const powerOffContent = {
   title: "get a better night's sleep",
   subtitle: 'Sleep better, without risk of dependency',
+  bigTitle: 'poweroff',
   route: '/',
-  imgSrc: '/assets/power-off-product.png',
-  imgAlt: 'power-off-product',
+  productImgSrc: '/assets/power-off-product.png',
+  productImgAlt: 'power-off-product',
+  bgImgSrc: '/assets/power-off-bg.jpg',
+  bgImgAlt: 'power-off-bg',
   bgColor: '#1d1d1d',
 };
 
