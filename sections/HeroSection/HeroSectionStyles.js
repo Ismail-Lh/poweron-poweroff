@@ -15,4 +15,8 @@ export const Wrapper = styled.section`
   @media (max-width: 768px) {
     height: calc(100vh - 5.5rem);
   }
+
+  @media (max-width: 428px) {
+    height: calc(76.8rem - 5.5rem);
+  }
 `;

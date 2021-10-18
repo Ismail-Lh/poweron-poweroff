@@ -11,14 +11,14 @@ const HomePage = () => {
   return (
     <Layout>
       <HeroSection />
-      {/* <ProductFeatureSection
-        {...powerOnContent}
-        productFeature={powerOnFeature}
-      />
       <ProductFeatureSection
         {...powerOffContent}
         productFeature={powerOffFeature}
-      /> */}
+      />
+      <ProductFeatureSection
+        {...powerOnContent}
+        productFeature={powerOnFeature}
+      />
     </Layout>
   );
 };

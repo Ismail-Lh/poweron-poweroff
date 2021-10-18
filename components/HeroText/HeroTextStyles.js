@@ -24,18 +24,6 @@ export const ContentContainer = styled(motion.div)`
       text-align: center;
     }
   }
-
-  /* ${({ powerOn }) =>
-    powerOn &&
-    css`
-      margin-left: 15rem;
-    `}
-
-  ${({ powerOff }) =>
-    powerOff &&
-    css`
-      margin-right: 15rem;
-    `} */
 `;
 
 export const Title = styled.h1`
@@ -96,12 +84,6 @@ export const SubTitle = styled.p`
     line-height: 1.8rem;
     width: 26.8rem;
   }
-
-  /* @media (max-width: 1024px) {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    margin: 0 0 1rem 0;
-  } */
 `;
 
 export const BigTitle = styled.h1`
@@ -119,11 +101,6 @@ export const BigTitle = styled.h1`
     font-size: 10rem;
     right: -13rem;
   }
-  /* 
-  @media (max-width: 1280px) {
-    font-size: 9rem;
-    right: -10rem;
-  } */
 
   @media (max-width: 1024px) {
     right: -16rem;

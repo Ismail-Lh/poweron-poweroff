@@ -53,7 +53,7 @@ button {
   max-width: 136.6rem;
   margin: 0 auto;
   
-  @media (max-width: 1336px){
+  @media (max-width: 1366px){
     max-width: 120rem;
   }
 
@@ -75,6 +75,10 @@ button {
 
   @media (max-width: 390px){
     max-width: 31.8rem;
+  }
+
+  @media (max-width: 320px){
+    max-width: 24.6rem;
   }
 }
 `;
