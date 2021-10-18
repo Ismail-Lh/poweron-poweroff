@@ -110,6 +110,7 @@ export const powerOnContent = {
   bgImgAlt: 'power-on-bg',
   bgColor: '#f7f7fb',
   primary: true,
+  powerOn: true,
 };
 
 export const powerOnFeature = [
@@ -155,6 +156,7 @@ export const powerOffContent = {
   bgImgSrc: '/assets/power-off-bg.jpg',
   bgImgAlt: 'power-off-bg',
   bgColor: '#1d1d1d',
+  powerOff: true,
 };
 
 export const powerOffFeature = [

@@ -23,7 +23,7 @@ const HeroText = ({
         <Button route='/' link='learn more' primary={primary} />
       </div>
 
-      <BigTitle>poweron</BigTitle>
+      <BigTitle>{bigTitle}</BigTitle>
     </ContentContainer>
   );
 };

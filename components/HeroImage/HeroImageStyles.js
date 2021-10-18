@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   display: grid;
   place-content: center;
   justify-content: flex-end;
+  z-index: 1;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     align-items: center;
@@ -45,25 +47,5 @@ export const Wrapper = styled.div`
       height: 100%;
       transform: translateX(0);
     }
-
-    /* @media (max-width: 1280px) {
-      width: 28.2rem;
-      height: 50.244rem;
-    }
-
-    @media (max-width: 1024px) {
-      width: 25.8rem;
-      height: 46.044rem;
-    }
-
-    @media (max-width: 768px) {
-      width: 46.8rem;
-      height: 83.444rem;
-    }
-
-    @media (max-width: 428px) {
-      width: 18.2rem;
-      height: 32.381rem;
-    } */
   }
 `;

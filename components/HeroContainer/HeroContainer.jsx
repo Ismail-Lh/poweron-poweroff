@@ -16,7 +16,7 @@ import {
 
 const HeroContainer = props => {
   return (
-    <Wrapper>
+    <Wrapper powerOff={props.powerOff}>
       <ContentContainer>
         <HeroImage {...props} />
 

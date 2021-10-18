@@ -15,14 +15,4 @@ export const Wrapper = styled.section`
   @media (max-width: 768px) {
     height: calc(100vh - 5.5rem);
   }
-
-  /* @media (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 50rem;
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  } */
 `;

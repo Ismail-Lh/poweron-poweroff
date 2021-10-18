@@ -3,9 +3,17 @@ import { motion } from 'framer-motion';
 
 export const Wrapper = styled.div`
   color: ${({ theme }) => theme.balticSea};
+  background-color: ${({ theme }) => theme.whiteLilac};
   position: relative;
   height: 100%;
   width: 100%;
+
+  ${({ powerOff }) =>
+    powerOff &&
+    css`
+      background-color: ${({ theme }) => theme.darkJungleGreen};
+      color: ${({ theme }) => theme.white};
+    `}
 `;
 
 export const ContentContainer = styled.div`
@@ -126,7 +134,6 @@ export const ImageContainer = styled(motion.div)`
   left: 0;
   width: 41.291rem;
   height: 100%;
-  z-index: -1;
 
   @media (max-width: 1366px) {
     width: 29.24rem;
