@@ -13,15 +13,15 @@ export const Wrapper = styled.section`
   }
 
   @media (max-width: 768px) {
-    height: 100vh;
+    height: 110vh;
   }
 
   @media (max-width: 428px) {
-    height: 60rem;
+    height: 70rem;
   }
 
   @media (max-width: 375px) {
-    height: 50rem;
+    height: 60rem;
   }
 
   .nsfBadge {
@@ -44,7 +44,7 @@ export const Wrapper = styled.section`
     @media (max-width: 768px) {
       width: 6rem;
       height: 7.4rem;
-      left: 7px;
+      left: 1rem;
     }
 
     @media (max-width: 375px) {
@@ -56,24 +56,33 @@ export const Wrapper = styled.section`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 56.6rem auto;
+  grid-template-columns: 56.6rem 45rem;
   align-items: center;
+  justify-content: center;
+  gap: 8rem;
 
   @media (max-width: 1366px) {
-    grid-template-columns: 41.1rem auto;
+    grid-template-columns: 41.1rem 37.1rem;
+    gap: 5rem;
   }
 
   @media (max-width: 1280px) {
-    grid-template-columns: 40rem auto;
+    grid-template-columns: 40rem 37.1rem;
   }
 
   @media (max-width: 1024px) {
-    grid-template-columns: 31rem auto;
+    grid-template-columns: 31rem 37.1rem;
+    gap: 4rem;
   }
 
   @media (max-width: 768px) {
+    grid-template-columns: 80%;
+    gap: 4rem;
+  }
+
+  @media (max-width: 428px) {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 `;
 
@@ -82,6 +91,7 @@ export const ImageContainer = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 
   @media (max-width: 428px) {
@@ -163,7 +173,7 @@ export const TitleContainer = styled.div`
   }
 
   h1 {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.darkJungleGreen};
     font-size: 4.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -179,9 +189,14 @@ export const TitleContainer = styled.div`
       margin-right: 4rem;
     }
 
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      margin-right: 0;
+    }
+
     @media (max-width: 428px) {
       font-size: 2.5rem;
-      margin-right: 0;
+      text-align: center;
     }
 
     @media (max-width: 375px) {
@@ -191,5 +206,11 @@ export const TitleContainer = styled.div`
     @media (max-width: 320px) {
       font-size: 1.5rem;
     }
+
+    ${({ powerOff }) =>
+      powerOff &&
+      css`
+        color: ${({ theme }) => theme.white};
+      `}
   }
 `;

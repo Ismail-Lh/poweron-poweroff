@@ -1,12 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding-left: 4rem;
-
-  @media (max-width: 428px) {
-    padding: 0;
-  }
-`;
+export const Wrapper = styled.div``;
 
 export const ProductFeature = styled.div`
   display: flex;
@@ -59,7 +53,15 @@ export const Icon = styled.div`
   }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 428px) {
+    width: 100%;
+  }
+`;
 
 export const Title = styled.h4`
   text-transform: uppercase;

@@ -19,7 +19,7 @@ const ProductFeatureSection = ({
   productFeature,
 }) => {
   return (
-    <Wrapper bgColor={bgColor}>
+    <Wrapper bgColor={bgColor} powerOff={powerOff}>
       <GridContainer className='container' primary={primary}>
         <ImageContainer powerOff={powerOff}>
           <div className='svgContainer'>
@@ -34,12 +34,12 @@ const ProductFeatureSection = ({
         />
       </GridContainer>
 
-      <TitleContainer className='container'>
+      <TitleContainer className='container' powerOff={powerOff}>
         <h1>{title}</h1>
         <Button route='/' link='lear more' primary={primary} />
       </TitleContainer>
 
-      <img src='assets/nsf-badge.png' alt='nsf-badge' className="nsfBadge"/>
+      <img src='assets/nsf-badge.png' alt='nsf-badge' className='nsfBadge' />
     </Wrapper>
   );
 };
