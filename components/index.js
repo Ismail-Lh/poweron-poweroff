@@ -22,6 +22,9 @@ export { default as HeroText } from './HeroText/HeroText';
 // Product Feature Section
 export { default as ProductFeatureContainer } from './ProductFeatureContainer/ProductFeatureContainer';
 
+// Newsletter Section
+export { default as NewsletterForm } from './NewsletterForm/NewsletterForm';
+
 // Footer
 export { default as Footer } from './Footer/Footer';
 export { default as FooterLinks } from './FooterLinks/FooterLinks';

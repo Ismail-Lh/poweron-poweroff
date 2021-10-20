@@ -1,5 +1,9 @@
 import { Layout } from '@components';
-import { HeroSection, ProductFeatureSection } from '@sections';
+import {
+  HeroSection,
+  ProductFeatureSection,
+  NewsletterSection,
+} from '@sections';
 import {
   powerOffContent,
   powerOffFeature,
@@ -19,6 +23,7 @@ const HomePage = () => {
         {...powerOnContent}
         productFeature={powerOnFeature}
       />
+      <NewsletterSection />
     </Layout>
   );
 };
