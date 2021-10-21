@@ -5,6 +5,18 @@ export const Wrapper = styled.section`
   height: 54rem;
   width: 100vw;
   position: relative;
+
+  @media (max-width: 1366px) {
+    height: 45rem;
+  }
+
+  @media (max-width: 1024px) {
+    height: 40rem;
+  }
+
+  @media (max-width: 320px) {
+    height: 35rem;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -24,6 +36,19 @@ export const Title = styled.h2`
   text-transform: uppercase;
   color: ${({ theme }) => theme.radicalRed};
   margin-bottom: 2rem;
+
+  @media (max-width: 1366px) {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 428px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -34,6 +59,21 @@ export const Text = styled.p`
 
   &.lightGrey {
     color: ${({ theme }) => theme.mountainMist};
+  }
+
+  @media (max-width: 1366px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 428px) {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
   }
 `;
 
@@ -49,6 +89,29 @@ export const IconContainer = styled.div`
   left: 50%;
   transform: translate(-50%);
 
+  @media (max-width: 1366px) {
+    width: 8.6rem;
+    height: 8.6rem;
+    top: -4.3rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 7.5rem;
+    height: 7.5rem;
+    top: -3.75rem;
+    left: 75%;
+  }
+
+  @media (max-width: 428px) {
+    left: 50%;
+  }
+
+  @media (max-width: 375px) {
+    width: 5rem;
+    height: 5rem;
+    top: -2.5rem;
+  }
+
   .outlineCircle {
     width: 14.1rem;
     height: 14.1rem;
@@ -58,10 +121,41 @@ export const IconContainer = styled.div`
     display: grid;
     place-content: center;
 
+    @media (max-width: 1366px) {
+      width: 7.375rem;
+      height: 7.375rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 6.275rem;
+      height: 6.275rem;
+    }
+
+    @media (max-width: 375px) {
+      width: 4rem;
+      height: 4rem;
+      border: 2px solid #fff;
+    }
+
     svg {
       width: 10rem;
       height: 10rem;
       fill: ${({ theme }) => theme.white};
+
+      @media (max-width: 1366px) {
+        width: 5.231rem;
+        height: 5.231rem;
+      }
+
+      @media (max-width: 768px) {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+
+      @media (max-width: 375px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
   }
 `;
