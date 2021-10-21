@@ -25,7 +25,6 @@ export { default as ProductFeatureContainer } from './ProductFeatureContainer/Pr
 // Newsletter Section
 export { default as NewsletterForm } from './NewsletterForm/NewsletterForm';
 
-// Footer
-export { default as Footer } from './Footer/Footer';
+// Footer Section
 export { default as FooterLinks } from './FooterLinks/FooterLinks';
 export { default as FooterForm } from './FooterForm/FooterForm';

@@ -6,8 +6,8 @@ const FooterLinks = () => {
   return (
     <Wrapper>
       {footerLinks.map(({ id, title, links }) => (
-        <div key={id}>
-          <h3>{title}</h3>
+        <div key={id} className='list__Container'>
+          <h3 className='list__title'>{title}</h3>
           <List>
             {links.map(({ linkId, link, route }) => (
               <ListItem key={linkId}>
