@@ -4,12 +4,25 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   h3 {
     text-transform: uppercase;
     font-size: 2.2rem;
     letter-spacing: 1px;
     color: ${({ theme }) => theme.mountainMist};
     margin-bottom: 1rem;
+
+    @media (max-width: 1366px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 428px) {
+      margin-bottom: 0.75rem;
+    }
   }
 
   @media (max-width: 425px) {
@@ -35,6 +48,10 @@ export const ListItem = styled.li`
 
     &:hover {
       color: ${({ theme }) => theme.iron};
+    }
+
+    @media (max-width: 1366px) {
+      font-size: 1.4rem;
     }
   }
 `;
