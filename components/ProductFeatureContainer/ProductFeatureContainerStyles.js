@@ -41,7 +41,7 @@ export const Icon = styled.div`
       height: 2.5rem;
     }
 
-    @media (max-width: 428px) {
+    @media (max-width: 375px) {
       width: 2rem;
       height: 2rem;
     }
@@ -73,8 +73,8 @@ export const Title = styled.h4`
     font-size: 1.6rem;
   }
 
-  @media (max-width: 320px) {
-    font-size: 1.5rem;
+  @media (max-width: 375px) {
+    font-size: 1.4rem;
   }
 `;
 
@@ -84,10 +84,9 @@ export const Text = styled.p`
 
   @media (max-width: 428px) {
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
-
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }

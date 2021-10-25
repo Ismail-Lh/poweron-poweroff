@@ -7,7 +7,7 @@ export const ContentContainer = styled(motion.div)`
   & .content {
     width: 52rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       width: 45.9rem;
     }
 
@@ -34,7 +34,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   margin-bottom: 1rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     font-size: 6rem;
     line-height: 7rem;
   }
@@ -68,7 +68,7 @@ export const SubTitle = styled.p`
   letter-spacing: 1.5px;
   color: ${({ theme }) => theme.mountainMist};
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 2rem;
@@ -97,16 +97,12 @@ export const BigTitle = styled.h1`
   right: -22rem;
   transform: translateY(-50%) rotate(90deg);
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     font-size: 10rem;
     right: -13rem;
   }
 
-  @media (max-width: 1024px) {
-    right: -16rem;
-  }
-
-  @media (max-width: 950px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;

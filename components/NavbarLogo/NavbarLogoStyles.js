@@ -8,7 +8,7 @@ export const Logo = styled.div`
     width: 29.6rem;
     height: 3.5rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       width: 25.4rem;
       height: 3rem;
     }

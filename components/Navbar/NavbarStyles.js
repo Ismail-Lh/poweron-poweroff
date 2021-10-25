@@ -8,7 +8,7 @@ export const Header = styled.header`
   z-index: 9000;
   padding: 3.5rem 5rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     padding: 2.5rem 5rem;
   }
 

@@ -17,7 +17,7 @@ const NewsletterSection = () => {
       <ContentContainer className='container'>
         <TextContainer>
           <Title>newsletter</Title>
-          <Text>stay up to date with our latest news and products</Text>
+          <Text>Stay up to date with our latest news and products</Text>
         </TextContainer>
         <NewsletterForm />
         <Text className='lightGrey'>

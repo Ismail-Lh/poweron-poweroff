@@ -4,7 +4,7 @@ export const Wrapper = styled.footer`
   background-color: ${({ theme }) => theme.whiteLilac};
   height: 54rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     height: 45rem;
   }
 
@@ -16,7 +16,7 @@ export const Wrapper = styled.footer`
     font-size: 2.2rem;
     color: ${({ theme }) => theme.mountainMist};
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       font-size: 1.6rem;
     }
   }
@@ -45,7 +45,7 @@ export const GridContainer = styled.div`
   padding-bottom: 7rem;
   border-bottom: 1px solid #8d8d8d;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     padding-bottom: 5.5rem;
   }
 
@@ -75,7 +75,7 @@ export const GridContainer = styled.div`
         height: 4.5rem;
         width: fit-content;
 
-        @media (max-width: 1366px) {
+        @media (max-width: 1440px) {
           height: 2.5rem;
         }
       }
@@ -84,7 +84,7 @@ export const GridContainer = styled.div`
         line-height: 2.5rem;
         margin: 2.5rem 0;
 
-        @media (max-width: 1366px) {
+        @media (max-width: 1440px) {
           line-height: 2rem;
           margin: 1.5rem 0;
         }
@@ -96,7 +96,7 @@ export const GridContainer = styled.div`
     display: flex;
     gap: 2rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       gap: 1rem;
     }
 
@@ -104,7 +104,7 @@ export const GridContainer = styled.div`
       width: 3.5rem;
       height: 3.5rem;
 
-      @media (max-width: 1366px) {
+      @media (max-width: 1440px) {
         height: 2.75rem;
         width: 2.75rem;
       }

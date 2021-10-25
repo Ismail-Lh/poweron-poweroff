@@ -15,7 +15,7 @@ const HeroSection = () => {
 
   return (
     <Wrapper>
-      <Carousel
+      {/* <Carousel
         ssr={false}
         responsive={responsive}
         infinite={true}
@@ -23,7 +23,9 @@ const HeroSection = () => {
         autoPlaySpeed={3000}>
         <HeroContainer {...powerOnContent} />
         <HeroContainer {...powerOffContent} />
-      </Carousel>
+      </Carousel> */}
+
+      <HeroContainer {...powerOnContent} />
     </Wrapper>
   );
 };

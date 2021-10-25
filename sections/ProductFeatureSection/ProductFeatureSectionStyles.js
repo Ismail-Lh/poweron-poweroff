@@ -2,27 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
   width: 100vw;
-  height: 100vh;
   background-color: ${({ bgColor }) => bgColor};
   position: relative;
   display: grid;
   place-content: center;
-
-  @media (max-width: 1366px), (max-width: 428px) {
-    height: 76.8rem;
-  }
-
-  @media (max-width: 768px) {
-    height: 110vh;
-  }
-
-  @media (max-width: 428px) {
-    height: 70rem;
-  }
-
-  @media (max-width: 375px) {
-    height: 60rem;
-  }
+  padding: 5rem 0;
 
   .nsfBadge {
     position: absolute;
@@ -30,7 +14,7 @@ export const Wrapper = styled.section`
     bottom: 5rem;
     width: 14.4rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       width: 8.2rem;
       left: 4.2rem;
       bottom: 4.2rem;
@@ -61,7 +45,7 @@ export const GridContainer = styled.div`
   justify-content: center;
   gap: 8rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     grid-template-columns: 41.1rem 37.1rem;
     gap: 5rem;
   }
@@ -104,7 +88,7 @@ export const ImageContainer = styled.div`
     transform: rotate(15deg);
     z-index: 10;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       width: 28.588rem;
       height: 50.936rem;
     }
@@ -132,7 +116,7 @@ export const ImageContainer = styled.div`
     top: 50%;
     transform: translateY(-50%);
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       height: 41.224rem;
     }
 
@@ -168,7 +152,8 @@ export const TitleContainer = styled.div`
     gap: 2rem;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
+    margin-top: 0 !important;
     gap: 1rem;
   }
 
@@ -179,13 +164,8 @@ export const TitleContainer = styled.div`
     text-transform: uppercase;
     margin-right: 9rem;
 
-    @media (max-width: 1366px) {
-      font-size: 4rem;
-      margin-right: 6rem;
-    }
-
-    @media (max-width: 1280px) {
-      font-size: 3.5rem;
+    @media (max-width: 1440px) {
+      font-size: 3.75rem;
       margin-right: 4rem;
     }
 
@@ -195,16 +175,16 @@ export const TitleContainer = styled.div`
     }
 
     @media (max-width: 428px) {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       text-align: center;
     }
 
     @media (max-width: 375px) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     @media (max-width: 320px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     ${({ powerOff }) =>

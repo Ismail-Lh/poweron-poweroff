@@ -18,8 +18,8 @@ export const FormContainer = styled.form`
     gap: 2rem;
   }
 
-  @media (max-width: 320px) {
-    width: 24.6rem;
+  @media (max-width: 375px) {
+    width: 100%;
     gap: 1rem;
   }
 
@@ -28,7 +28,7 @@ export const FormContainer = styled.form`
     font-size: 2.2rem;
     border-radius: 2rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       font-size: 2rem;
     }
 
@@ -36,7 +36,7 @@ export const FormContainer = styled.form`
       font-size: 1.6rem;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 375px) {
       font-size: 1.4rem;
     }
   }
@@ -47,7 +47,7 @@ export const FormContainer = styled.form`
       padding: 3.5rem 0 3.5rem 3.5rem;
       color: ${({ theme }) => theme.mountainMist};
 
-      @media (max-width: 1366px) {
+      @media (max-width: 1440px) {
         padding: 2.8rem 0 2.8rem 3.5rem;
       }
 
@@ -55,7 +55,7 @@ export const FormContainer = styled.form`
         padding: 2rem;
       }
 
-      @media (max-width: 320px) {
+      @media (max-width: 375px) {
         padding: 1.5rem;
       }
     }
@@ -73,7 +73,7 @@ export const FormContainer = styled.form`
         transform: scale(0.9);
       }
 
-      @media (max-width: 1366px) {
+      @media (max-width: 1440px) {
         padding: 2rem 3rem;
       }
 

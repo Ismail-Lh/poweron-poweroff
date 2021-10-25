@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   width: 100vw;
   position: relative;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     height: 45rem;
   }
 
@@ -14,7 +14,7 @@ export const Wrapper = styled.section`
     height: 40rem;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     height: 35rem;
   }
 `;
@@ -37,7 +37,7 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.radicalRed};
   margin-bottom: 2rem;
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     font-size: 4rem;
     margin-bottom: 1rem;
   }
@@ -61,7 +61,7 @@ export const Text = styled.p`
     color: ${({ theme }) => theme.mountainMist};
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     font-size: 2rem;
     line-height: 2rem;
   }
@@ -71,7 +71,7 @@ export const Text = styled.p`
     line-height: 1.6rem;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
@@ -89,7 +89,7 @@ export const IconContainer = styled.div`
   left: 50%;
   transform: translate(-50%);
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     width: 8.6rem;
     height: 8.6rem;
     top: -4.3rem;
@@ -121,7 +121,7 @@ export const IconContainer = styled.div`
     display: grid;
     place-content: center;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       width: 7.375rem;
       height: 7.375rem;
     }
@@ -142,7 +142,7 @@ export const IconContainer = styled.div`
       height: 10rem;
       fill: ${({ theme }) => theme.white};
 
-      @media (max-width: 1366px) {
+      @media (max-width: 1440px) {
         width: 5.231rem;
         height: 5.231rem;
       }

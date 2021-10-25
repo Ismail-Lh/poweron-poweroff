@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
     color: ${({ theme }) => theme.mountainMist};
     margin-bottom: 1rem;
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       font-size: 1.8rem;
     }
 
@@ -50,7 +50,7 @@ export const ListItem = styled.li`
       color: ${({ theme }) => theme.iron};
     }
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1440px) {
       font-size: 1.4rem;
     }
   }
